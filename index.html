@@ -2,28 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scaled=1.0"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scaled=1.0"/> -->
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/pace.min.js"></script>
 
     <title>Team Awesome</title>
   </head>
   <body>
-
-
-
-
-
-
-
+<!-- PARALLAX HEADER -->
+        <div class="header_container">
+          <ul id="scene">
+            <li class="layer" data-depth="0.10"><img src="images/layer1.png" /></li>
+            <li class="layer" data-depth="0.20"><img src="images/layer2.png" /></li>
+            <li class="layer" data-depth="0.40"><img src="images/layer3.png" /></li>
+            <li class="layer" data-depth="0.60"><img src="images/layer4.png" /></li>
+            <li class="layer" data-depth="0.80"><img src="images/layer5.png" /></li>
+          </ul>
+        </div>
+      <!-- END PARALLAX -->
+      <img class="animsition" src="http://htcraceseries.com/wp-content/uploads/2015/11/PDX-Exteriors-north-runway.jpg" alt=""/>
+  <div>
+    <a href="./community.html" class="animsition-link"
+    data-animsition-out-class="fade-out-right-sm"
+    data-animsition-out-duration="800">COMMUNITY</a>
+  </div>
 
     <!-- SCRIPTS GOES HERE -->
-    <script src="js/pace.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/animsition.js"></script>
+    <script src="js/parallax.js"></script>
     <script>
       var scene = document.getElementById('scene');
       var parallax = new Parallax(scene);
     </script>
-    <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
     <!-- END SCRIPTS -->
   </body>
